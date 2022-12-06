@@ -19,7 +19,7 @@ import (
 
 var version = "dev"
 
-const tabstop = 8
+const tabstop = 4
 
 var (
 	stdinfd  = int(os.Stdin.Fd())

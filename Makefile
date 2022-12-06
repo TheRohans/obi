@@ -1,9 +1,13 @@
-mini: mini.go
-ifdef VERSION
-	go build -ldflags="-X 'main.version=$(VERSION)'" -o mini .
-else
-	go build -o mini .
-endif
+
+APP=obi
+VERSION=$(shell git log --pretty=format:'%h' -n 1)
+
+build:
+	go build -ldflags="-X 'main.version=$(VERSION)'" -o $(APP) ./cmd/$(APP)/
+
+run:
+	go run -ldflags="-X 'main.version=$(VERSION)'" ./cmd/$(APP)/
 
 clean:
-	rm mini
+	rm -rf $(APP)
+

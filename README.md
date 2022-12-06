@@ -1,24 +1,22 @@
-# mini
+# obi
 
-Mini is a small text editor, inspred by [antirez's kilo](http://antirez.com/news/108) editor.  
-It aims to [_Keep it simple, stupid_](https://en.wikipedia.org/wiki/KISS_principle).
-
-[![asciicast](https://asciinema.org/a/392547.svg)](https://asciinema.org/a/392547)
+Obi is a small text editor, inspred by [antirez's kilo](http://antirez.com/news/108) editor, and
+forked from [mini](https://github.com/hibiken/mini).
 
 ## Features
 
-Mini has a small set of features just enough to be a usable code editor.
+Obi has a small set of features just enough to be a usable code editor.
 
 - Syntax Highligting
 - Searching
 
 ## Installation
 
-    $ go get github.com/hibiken/mini
+    $ go get github.com/therohans/obi
 
 ## Usage
 
-    $ mini <filename>
+    $ obi <filename>
 
 ## Key bindings
 
@@ -29,8 +27,9 @@ Mini has a small set of features just enough to be a usable code editor.
 ## Limitations
 
 Syntax highlight is enabled for C, C++, and Go, but it can be extended for other languages.
-Currently mini editor only supports Unix-like OS (e.g. Linux, MacOS).
+Obi editor only supports Unix-like OS (e.g. Linux, MacOS, FreeBSD).
 
 ## License
 
-Mini editor is released under MIT license. See [LICENSE](https://github.com/hibiken/mini/blob/master/LICENSE).
+Obi is forked from the Mini editor which is released under MIT license. 
+See [LICENSE](https://github.com/hibiken/mini/blob/master/LICENSE).
